@@ -9,11 +9,11 @@ if __name__ == '__main__':
     model = YOLO('yolo11s.pt')
     # 训练模型 --- 这里的参数就特别多，无需每一个都记下来，只需要记住常用的基本命令就可以
     model.train(
-        data="datasets/data.yaml",
-        epochs=3,
-        device=0,
-        batch=8,
-        workers=8
+        data="datasets/data.yaml",  # 数据集
+        epochs=100,  # 训练轮数
+        device=0,  # 设备
+        batch=8,  # 批次
+        workers=8,  # 多线程
     )
 
 
