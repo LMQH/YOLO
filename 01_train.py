@@ -12,12 +12,6 @@ if __name__ == '__main__':
         data="datasets/data.yaml",  # 数据集
         epochs=100,  # 训练轮数
         device=0,  # 设备
-        batch=8,  # 批次
+        batch=32,  # 批次设置
         workers=8,  # 多线程
     )
-
-
-
-
-
-
