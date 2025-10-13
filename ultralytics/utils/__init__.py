@@ -455,7 +455,9 @@ def set_logging(name="LOGGING_NAME", verbose=True):
 
 
 # Set logger
-LOGGER = set_logging(LOGGING_NAME, verbose=VERBOSE)  # define globally (used in 01_train.py, val.py, predict_old.py, etc.)
+LOGGER = set_logging(
+    LOGGING_NAME, verbose=VERBOSE
+)  # define globally (used in 01_train.py, val.py, predict_old.py, etc.)
 for logger in "sentry_sdk", "urllib3.connectionpool":
     logging.getLogger(logger).setLevel(logging.CRITICAL + 1)
 
